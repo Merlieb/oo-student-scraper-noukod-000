@@ -29,7 +29,6 @@ def self.scrape_index_page(index_url)
      student[:bio] = nokogiri.css("div.bio-content.content-holder div.description-holder p").text if nokogiri.css("div.bio-content.content-holder div.description-holder p")
 
    end
-   # binding.pry
    student
  end
 end
